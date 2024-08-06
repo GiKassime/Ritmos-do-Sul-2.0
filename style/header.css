@@ -53,6 +53,9 @@ header li a{
     font-size: calc(25px + 0.5vw);
     transition: color 0.3s;
 }
+header li a:hover{
+    color: #d4d4d4;
+}
 header.rolagem {
     position: fixed;
     width: 100%;
