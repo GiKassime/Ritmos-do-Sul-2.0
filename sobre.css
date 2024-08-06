@@ -1,0 +1,78 @@
+/* Seção da história da banda */
+.band-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Adiciona box-sizing para evitar overflow inesperado */
+}
+
+.history-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que a imagem e o texto se movam para a linha seguinte em telas menores */
+    max-width: 80vw;
+    width: 100%;
+    box-sizing: border-box; /* Adiciona box-sizing para evitar overflow inesperado */
+}
+
+.history-image {
+    flex: 1;
+    min-width: 30vw; /* Garante uma largura mínima para a imagem */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    min-height: 100vh;
+}
+
+.history-image img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.history-text h2 {
+    font-size: calc(24px + 1.5vw);
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.history-text h3 {
+    font-size: calc(20px + 0.5vw);
+    margin-top: 20px;
+    color: #444;
+}
+
+.history-text p {
+    font-size: calc(16px + 0.5vw);
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .history-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image {
+        min-width: 0; /* Remove a largura mínima em telas menores */
+    }
+
+    .history-image img {
+        max-width: 100%; /* Garante que a imagem se ajuste ao tamanho do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .history-text {
+        padding: 10px;
+    }
+}

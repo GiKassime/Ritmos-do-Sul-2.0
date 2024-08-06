@@ -1,0 +1,68 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Reset CSS */
+body {
+    background: rgba(0, 0, 0, 2);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Navegação */
+.container {
+   max-width: 1280px;
+   margin: 0 2vw;
+}
+.nome-banda {
+    position: absolute;
+}
+/* Ícones sociais */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header{
+    position: fixed;
+    width: 100%;
+    padding: 2vh 0;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: .5s;
+
+}
+header i{
+    font-size: calc(25px + 0.5vw);
+    color: #fff;
+}
+header li{
+    display: inline-block;
+    margin: 0 2vw;
+    list-style: none;
+    font-family: "Bebas Neue", sans-serif ;
+    
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: calc(25px + 0.5vw);
+    transition: color 0.3s;
+}
+header.rolagem {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 0 0;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    header{
+        width: 100%;
+    }
+}

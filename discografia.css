@@ -1,0 +1,155 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Reset CSS */
+body {
+    background: rgba(0, 0, 0, 2);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Navegação */
+.navigation {
+    z-index: 999; /*deica por cima de outros elementos*/
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: space-around; /* Distribui o espaço entre os itens */
+    background: transparent; /* Fundo transparente */
+    
+}
+
+/* Ícones sociais */
+.social-items {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+  
+}
+
+.social-items a {
+    color: white;
+    font-size: calc(16px + 1vw);
+    transition: color 0.3s;
+}
+
+.social-items a:hover {
+    color: #888783;
+}
+
+/* Links de navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif ;
+    color: white;
+    font-size: calc(25px + 0.5vw);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888783;
+}
+
+
+/* Estilo para o contêiner de cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 20px 20px; /* Espaçamento inferior para não sobrepor a barra de navegação */
+}
+
+/* Estilo para os cards */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px; /* Largura do card */
+    height: 300px; /* Altura do card, igual à largura para manter o formato quadrado */
+    position: relative; /* Necessário para o efeito de sobreposição da descrição */
+    overflow: hidden; /* Garante que a imagem e o conteúdo não vazem o card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o card */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilo para a imagem dos cards */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o card sem cortar */
+    position: absolute; /* Posiciona a imagem dentro do card */
+    top: 0;
+    left: 0;
+}
+
+/* Conteúdo dos cards */
+.card-content {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupa o card inteiro */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste */
+    color: #fff;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mostrar descrição ao passar o mouse no card */
+.card:hover .card-content {
+    opacity: 1;
+}
+
+/* Estilo para a descrição dos cards */
+.card-description {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Estilo para o botão */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Fundo transparente */
+    color: #fff; /* Cor do texto */
+    border: 2px solid #fff; /* Borda fina e colorida */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none;
+    font-size: 1em; /* Tamanho da fonte do botão */
+    font-weight: bold;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    box-shadow: none; /* Sem sombra externa */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.card-button:hover {
+    background-color: #000; /* Cor de fundo no hover */
+    color: #fff; /* Cor do texto no hover */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+/* Adicionando uma sombra interna ao botão no foco */
+.card-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.5); /* Sombra de foco */
+}
