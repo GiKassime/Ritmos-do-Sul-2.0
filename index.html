@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/style/cards.css">
     <link rel="stylesheet" href="/style/sobre.css">
     <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/contato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -16,17 +17,19 @@
     <header id="header">
         <div class="container">
             <div class="flex">
-                <a href=""><a href=""><i class="fa-brands fa-instagram"></i></a></a>
+                <a href="index.html"><img class="icone" src="/img/logo.png" alt=""></a>
                 <nav>
                     <ul>
                          <li><a href="index.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="contato.html">Contato</a></li>
                         <li><a href="/pages/discografia.html">Álbuns</a></li>
                     </ul>
-                    
+                
+
                 </nav>
+                <button id="openDialogBtn">Contato</button>
+
             </div>
         </div>
     </header>
@@ -111,7 +114,32 @@
                 </div>
             </div>
         </section>
-
+        <dialog id="contactDialog">
+            <div>
+                <span class="close">&times;</span>
+                <h2 class="titulo">FALE <span>CONOSCO</span></h2>
+                <form id="contactForm" action="">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
+                    <div>
+                        <select name="integrante-escolhido" id="integrante-escolhido">
+                            <option value="">Selecione o integrante</option>
+                            <option value="opcao_pedro">Pedro Silva</option>
+                            <option value="opcao_elena">Elena Reyes</option>
+                            <option value="opcao_mateo">Mateo Rivera</option>
+                            <option value="opcao_valentina">Valentina López</option>
+                        </select>
+                    </div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    
+        <!-- Área de saída -->
+        <div id="outputArea"></div>
     </main>
     <footer class="footer">
         <div class="footer-top">
@@ -124,7 +152,6 @@
                         <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-spotify"></i></a></li>
-                       
                     </ul>
                 </div>
                 <div class="col2">
@@ -158,5 +185,6 @@
     </footer>
     <script src="/scripts/banner.js"></script>
     <script src="/scripts/nav.js"></script>
+    <script src="/scripts/contato.js"></script>
 </body>
 </html>
