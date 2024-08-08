@@ -66,7 +66,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 80px 20px 20px; /* Espaçamento inferior para não sobrepor a barra de navegação */
+    padding: 16vw 20px 20px; /* Espaçamento inferior para não sobrepor a barra de navegação */
 }
 
 /* Estilo para os cards */
@@ -75,8 +75,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: 300px; /* Largura do card */
-    height: 300px; /* Altura do card, igual à largura para manter o formato quadrado */
+    width: 30vw; /* Largura do card */
+    height: 40vh; /* Altura do card, igual à largura para manter o formato quadrado */
     position: relative; /* Necessário para o efeito de sobreposição da descrição */
     overflow: hidden; /* Garante que a imagem e o conteúdo não vazem o card */
     display: flex;

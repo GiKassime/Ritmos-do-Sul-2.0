@@ -1,0 +1,67 @@
+
+.agenda{
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-do-card  {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+ 
+    backdrop-filter: blur(90px);
+    background-color: rgba(171, 190, 182, 0.208);
+    color: white;
+}
+
+.card-item{    
+    min-width: 25vw;
+    min-height: 45vh;
+    max-width: 5vw;
+    max-height: 50vh;
+   text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dia{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: calc(50px + 0.5vw);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 34px 0 0 0;
+    text-shadow: 0 0 10px #dfeb9f;
+    filter: brightness(1.9);
+}
+.ano {
+    color: azure;
+    font-size: calc(50px + 0.5vw);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.borda-agenda {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    border: 0.5px solid rgb(255, 218, 71);
+    border-radius: 9%;
+}
+.botao{
+    backdrop-filter: blur(20px);
+    background-color: rgb(63, 139, 5);
+    margin-bottom: 30px;
+}
+
+.setas {
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    text-shadow: 0 0 10px #dfeb9f;
+    filter: brightness(1.9);
+    font-size: 40px;
+}
+.setas i:active{
+    transform: scale(0.9);
+}
+

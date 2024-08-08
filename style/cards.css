@@ -1,9 +1,9 @@
 
 .section-title {
-    color: #fff;
-    font-size: 2em;
-    margin-bottom: 20px;
+    color: azure;
+    font-size: calc(50px + 0.5vw);
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .card-container {
