@@ -18,6 +18,6 @@ for (let index = 1; index < 5; index++) {
 
  revelar.reveal('.slide', {
     duration: delay, // 2000 + 100
-    distance: '900px'
+    distance: '20px'
    });
  
