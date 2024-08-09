@@ -4,6 +4,14 @@ const mes = document.querySelector('.mes');
 const setas = document.querySelector('.setas');
 const ano = document.querySelector('.ano');
 let btn = document.getElementById('botao')
+const locais = [
+    "Ginásio Poliesportivo", "Maracanã", "Teatro Guaíra",
+    "Allianz Parque", "Mineirão", "Arena do Grêmio",
+    "Centro de Eventos", "Arena Fonte Nova", "Estádio Nacional",
+    "Arena da Amazônia", "Classic Hall", "Arena das Dunas", "Beira-Mar",
+    "Mangueirão", "Goiânia Arena", "Autódromo", "Pedra da Cebola"
+];
+
 const cidades = [
     "Guarulhos - SP", "Rio de Janeiro - RJ", "Curitiba - PR", 
     "São Paulo - SP", "Belo Horizonte - MG", "Porto Alegre - RS",
@@ -54,7 +62,7 @@ function carregar(x, anoo){
 
 function abrirAviso(){
     aviso.showModal()
-    var mensagem = "O show em "+ cidades[x]+" ocorrera no dia "+ dias[x]+" em "+meses[x]+" de "+anoo+"<p>VENHA ESCUTAR A MELHOR BANDA SERTANEJA DA AMÉRICA LATINHA <span>RITMOS DO SUL</span></p>";
+    var mensagem = "O show em "+ cidades[x]+" ocorrera no dia "+ dias[x]+" de "+meses[x]+" de "+anoo+"<p style='color:#d7e414'>"+locais[x]+"</p><p>VENHA ESCUTAR A MELHOR BANDA SERTANEJA DA AMÉRICA LATINHA <span>RITMOS DO SUL</span></p>";
     document.getElementById("aviso").innerHTML = mensagem;
 }
 carregar(0,"2024");
