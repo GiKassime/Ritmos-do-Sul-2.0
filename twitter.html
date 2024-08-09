@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Twitter</title>
+    <link rel="stylesheet" href="/style/twitter.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>   <!-- Botão de Voltar -->
+        <a href="index.html" class="back-button"> <i class="fa-solid fa-arrow-left white icon"></i></a>
+    <div class="profile-container">
+     
+
+        <!-- Cabeçalho com Banner e Foto de Perfil -->
+        <header class="profile-header">
+            <div class="profile-banner">
+                <img src="" id="banner-imagem"alt="Banner" class="banner-imagem">
+            </div>
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="" class="img-usuario" id="img-perfil"alt="Perfil">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name" id="nome-usuario">Nome de Usuário</h1>
+                    <p class="profile-username"  id="username" >@username</p>
+                    <p class="profile-bio" id="bio">Aqui vai uma breve biografia do usuário. Pode incluir informações sobre interesses, profissão, etc.</p>
+                    <div class="profile-stats">
+                        <span id="tweets"><strong>1.234</strong> Tweets</span>
+                        <span id="seguidores"><strong>567</strong> Seguidores</span>
+                        <span id="seguindo"><strong>890</strong> Seguindo</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Conteúdo Principal com Tweets -->
+        <main class="profile-main">
+            <section class="tweets">
+                <h2 >Tweets</h2>
+                <div class="tweet">
+                    <div class="tweet-header">
+                        <div class="tweet-profile-picture">
+                            <img class="img-usuario" src="" alt="Perfil">
+                        </div>
+                        <div class="tweet-info">
+                            <p class="tweet-name" id="nome-usuario">Nome de Usuário <span id="username">@username</span></p>
+                            <p class="tweet-time">há 1h</p>
+                        </div>
+                    </div>
+                    <p class="tweet-text">Este é um exemplo de tweet. Aqui vai o conteúdo do tweet do usuário.</p>
+                    <!-- Imagem do Tweet -->
+                    <div class="tweet-image">
+                        <img src="tweet-image.jpg" alt="Imagem do Tweet">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/scripts/twitter.js" ></script>
+</body>
+</html>
