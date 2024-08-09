@@ -52,5 +52,9 @@ function carregar(x, anoo){
     ano.innerHTML = anoo;
 }
 
-
+function abrirAviso(){
+    aviso.showModal()
+    var mensagem = "O show em "+ cidades[x]+" ocorrera no dia "+ dias[x]+" em "+meses[x]+" de "+anoo+"<p>VENHA ESCUTAR A MELHOR BANDA SERTANEJA DA AMÉRICA LATINHA <span>RITMOS DO SUL</span></p>";
+    document.getElementById("aviso").innerHTML = mensagem;
+}
 carregar(0,"2024");

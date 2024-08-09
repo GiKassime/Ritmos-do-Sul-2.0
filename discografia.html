@@ -75,11 +75,11 @@
                     <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
                     <div>
                         <select name="integrante-escolhido" id="integrante-escolhido">
-                            <option value="">Selecione o integrante</option>
-                            <option value="opcao_pedro">Pedro Silva</option>
-                            <option value="opcao_elena">Elena Reyes</option>
-                            <option value="opcao_mateo">Mateo Rivera</option>
-                            <option value="opcao_valentina">Valentina López</option>
+                            <option value="Ritmos do Sul">Selecione o integrante</option>
+                            <option value="Pedro Silva">Pedro Silva</option>
+                            <option value="Elena Reyes">Elena Reyes</option>
+                            <option value="Mateo Rivera">Mateo Rivera</option>
+                            <option value="Valentina López">Valentina López</option>
                         </select>
                     </div>
                     <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
@@ -89,7 +89,10 @@
                 </form>
             </div>
         </dialog>
-    <div id="outputArea"></div>
+    <dialog id="avisoDialog" class="aviso">
+        <span class="close" id="fecharAvisoDialog">&times;</span>
+        <h2 id="aviso"></h2>
+    </dialog>
     </div>
     <footer class="footer">
         <div class="footer-top">

@@ -3,7 +3,7 @@ const dialog = document.getElementById("contactDialog");
 const openBtn = document.getElementById("openDialogBtn");
 const closeBtn = document.querySelector(".close");
 const form = document.getElementById("contactForm");
-const outputArea = document.getElementById("outputArea");
+const aviso = document.querySelector("#avisoDialog");
 
 // Abrir o dialog
 openBtn.addEventListener("click", () => dialog.showModal());
@@ -17,14 +17,25 @@ dialog.addEventListener("click", (event) => {
     dialog.close();
   }
 });
+avisoDialog.addEventListener("click", (event) => {
+  if (event.target === avisoDialog) {
+    avisoDialog.close();
+  }
+});
 
 // Tratar envio do formulário
-form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevenir comportamento padrão do formulário
-  dialog.close();
-  outputArea.innerHTML = "Formulário enviado!";
-  setTimeout(() => {
-    outputArea.innerHTML = "";
-  }, 5000);
-  form.reset();
+ document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o envio do formulário
+  var integrante = document.getElementById("integrante-escolhido").value;
+  var mensagem = "Formulário enviado com sucesso para <span>" + integrante + "</span>!";
+  document.getElementById("aviso").innerHTML = mensagem;
+  dialog.close(); // Fecha a dialog de contato
+  document.getElementById("avisoDialog").showModal(); // Abre a dialog de aviso
+  avisoDialog.InnerHtml = "<p>Formulário Enviado!</p>"
+  document.getElementById("contactForm").reset();
+});
+
+// Fecha a dialog de aviso
+document.getElementById("fecharAvisoDialog").addEventListener("click", function() {
+  document.getElementById("avisoDialog").close();
 });

@@ -18,7 +18,7 @@ input::placeholder, textarea::placeholder{
     color: #ffffff;
 }
 
-#contactDialog {
+#contactDialog, .aviso {
     backdrop-filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
   
     /* Adiciona uma cor de fundo opcional para melhorar a visibilidade do texto */
@@ -39,7 +39,11 @@ input::placeholder, textarea::placeholder{
     color: black;
     text-decoration: none;
 }
-
+.aviso {
+    color: #ffffff;
+    text-align: center;
+    width: 30%;
+}
 
 form {
     display: flex;
@@ -94,6 +98,6 @@ select option{
 select {
     color: #ffffff;
   }
-.titulo span {
+span {
     color: #48ff00;
 }
