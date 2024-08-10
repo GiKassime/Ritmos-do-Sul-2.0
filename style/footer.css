@@ -47,7 +47,7 @@ footer .container {
 
 .footer{
     position: relative;
-    background: url(/img/footer.png) no-repeat center ;
+    background: url(../img/footer.png) no-repeat center ;
     background-size: cover;
 }
 
@@ -58,7 +58,7 @@ footer .container {
 }
 .footer::before{
     content: '';
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 20%);
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 20%);
     position: absolute;

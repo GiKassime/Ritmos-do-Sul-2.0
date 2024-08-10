@@ -4,7 +4,7 @@ const perfis = [
         seguidores: "2.590.000",
         tweets: "2.123",
         seguindo: "2.123",
-        imagem: "/img/twitter/elenareyes_perfil.png",
+        imagem: "elenareyes_perfil.png",
         username: "elenareyess",
         bio:" <p>Santiago ↔ São Paulo</p> <p> Onde a tradição chilena encontra o sertanejo</p> ",
         banner: " "
@@ -14,7 +14,7 @@ const perfis = [
         seguidores: "1.950.354",
         tweets: "1.678",
         seguindo: "1.678",
-        imagem: "/img/twitter/mateorivera_perfil.png",
+        imagem: "mateorivera_perfil.png",
         username: "riveramateoo",
         bio:" ",
         banner: " "
@@ -24,7 +24,7 @@ const perfis = [
         seguidores: "4.897.565",
         tweets: "4.897",
         seguindo: "4.897",
-        imagem: "/img/twitter/pedrosilva_perfil.png",
+        imagem: "pedrosilva_perfil.png",
         username: "pedroosilvaa",
         bio:" ",
         banner: " "
@@ -34,7 +34,7 @@ const perfis = [
         seguidores: "3.612.334",
         tweets: "2.456",
         seguindo: "2.456",
-        imagem: "/img/twitter/valentinalopez_perfil.png",
+        imagem: "valentinalopez_perfil.png",
         username: "v.lopez",
         bio: " ",
         banner: " "
@@ -53,16 +53,17 @@ function carregarPerfil() {
     const index = localStorage.getItem('perfilIndex');
     if (index !== null && !isNaN(index) && index >= 0 && index < perfis.length) {
         const perfil = perfis[index];
+
         document.getElementById('nome-usuario').innerText = perfil.nome;
         document.getElementById('seguidores').innerText = perfil.seguidores;
         document.getElementById('tweets').innerText = perfil.tweets;
         document.getElementById('seguindo').innerText = perfil.seguindo;
-        document.getElementById('img-perfil').src = caminho + perfil.imagem;
-        document.getElementById('banner-imagem').src = caminho + perfil.imagem;
-        document.getElementById('username').innerText = perfil.username;
-        document.getElementById('bio').innerText = perfil.bio;
+        document.getElementById('img-perfil').src = caminho_img + perfil.imagem;
+        document.getElementById('banner-imagem').src = perfil.banner;
+        document.getElementById('username').innerText = `@${perfil.username}`;
+        document.getElementById('bio').innerHTML = perfil.bio;
     } else {
-        document.getElementById('profile-section').innerHTML = '<p>Perfil não encontrado.</p>';
+        document.getElementById('profile-main').innerHTML = '<p>Perfil não encontrado.</p>';
     }
 }
 function carregarTweets() {

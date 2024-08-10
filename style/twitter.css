@@ -96,18 +96,18 @@ body {
 .profile-name {
     margin: 0;
     font-size: 1.8em;
-    color: #ffffff;
+    color: #141414;
 }
 
 .profile-username {
     margin: 0;
     font-size: 1.2em;
-    color: #aab8c2;
+    color: #797979;
 }
 
 .profile-bio {
     margin-top: 10px;
-    color: #ffffff;
+    color: #181818;
 }
 
 /* Estatísticas do perfil */
@@ -115,7 +115,7 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    color: #aab8c2;
+    color: #808386;
 }
 
 .profile-stats span {
