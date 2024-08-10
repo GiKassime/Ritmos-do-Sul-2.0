@@ -17,22 +17,20 @@
         <!-- Cabeçalho com Banner e Foto de Perfil -->
         <header class="profile-header">
             <div class="profile-banner">
-                <img src="./img/imagem_carousel1.jpeg" id="banner-imagem"alt="Banner" class="banner-imagem">
+                <img src="" id="banner-imagem"alt="Banner" class="banner-image">
             </div>
             <div class="profile-info">
                 <div class="profile-picture">
-                    <img src="/img/twitter/elenareyes_perfil.png" id="img-perfil"alt="Perfil">
-                    <img src="" alt="">
-                
-                </div>
+                    <img src="" id="img-perfil" alt="Imagem Perfil">
+                </div>  
                 <div class="profile-details">
                     <h1 class="profile-name" id="nome-usuario">Nome de Usuário</h1>
                     <p class="profile-username"  id="username" >@username</p>
                     <p class="profile-bio" id="bio">Aqui vai uma breve biografia do usuário. Pode incluir informações sobre interesses, profissão, etc.</p>
                     <div class="profile-stats">
-                        <span id="tweets"><strong>1.234</strong> Tweets</span>
-                        <span id="seguidores"><strong>567</strong> Seguidores</span>
-                        <span id="seguindo"><strong>890</strong> Seguindo</span>
+                        <span ><strong id="tweets">1.234</strong> Tweets</span>
+                        <span ><strong id="seguidores">567</strong> Seguidores</span>
+                        <span><strong id="seguindo">890</strong> Seguindo</span>
                     </div>
                 </div>
             </div>
@@ -60,6 +58,14 @@
                 </div>
             </section>
         </main>
+        <!-- Modal para imagem -->
+    <div id="imageModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Imagem em tamanho maior">
+    </div>
+</div>
+
     </div>
     <script src="./scripts/twitter.js" ></script>
 </body>

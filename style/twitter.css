@@ -12,7 +12,7 @@ body {
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 3px;
     background-color: #ffffff; /* Fundo branco para o perfil */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,18 +46,23 @@ body {
 .profile-header {
     position: relative;
     border-bottom: 1px solid #e1e8ed;
+    /* Define uma altura fixa para o cabeçalho do perfil */
+    height: 40vh; /* Ajuste conforme necessário */
 }
 
-/* Imagem do banner */
 .profile-banner {
     position: relative;
     overflow: hidden;
+    height: 100%; /* Faz com que o banner preencha a altura do perfil-header */
+    width: 100%; /* Faz com que o banner preencha a largura do perfil-header */
 }
 
 .banner-image {
+    
     width: 100%;
-    height: 200px; /* Altura fixa para o banner */
+    height: 100%;
     object-fit: cover;
+    object-position: center; /* Centraliza a imagem */
 }
 
 /* Informações do perfil */
@@ -115,7 +120,7 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    color: #808386;
+    color: #030303;
 }
 
 .profile-stats span {
@@ -131,9 +136,24 @@ body {
 
 /* Seção de tweets */
 .tweets {
+    margin: 200px 0px;
     border-top: 1px solid #e1e8ed;
 }
 
+.tweets h2 {
+    margin: 100px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e8ed;
+    color: #14171a;
+    font-size: 1.5em;
+}
+
+/* Seção de tweets */
+.tweets {
+    border-top: 1px solid #e1e8ed;
+}
+
+/* Título da seção de tweets */
 .tweets h2 {
     margin: 0;
     padding: 10px 0;
@@ -142,17 +162,20 @@ body {
     font-size: 1.5em;
 }
 
+/* Tweet individual */
 .tweet {
     padding: 15px 0;
     border-bottom: 1px solid #e1e8ed;
 }
 
+/* Cabeçalho do tweet */
 .tweet-header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
+/* Foto de perfil do tweet */
 .tweet-profile-picture {
     width: 50px;
     height: 50px;
@@ -168,6 +191,7 @@ body {
     object-fit: cover;
 }
 
+/* Informações do tweet */
 .tweet-info {
     flex: 1;
 }
@@ -196,20 +220,31 @@ body {
 
 /* Imagem do tweet */
 .tweet-image {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    max-height: 400px; /* Tamanho máximo da imagem */
+    height: auto; /* Ajusta a altura da imagem automaticamente */
+    max-height: 400px; /* Define um tamanho máximo para a altura da imagem */
     overflow: hidden;
     margin-top: 10px;
 }
 
 .tweet-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: auto; /* Mantém a largura proporcional */
+    height: auto; /* Mantém a altura proporcional */
+    max-width: 100%; /* Limita a largura da imagem ao tamanho máximo do contêiner */
+    max-height: 100%; /* Limita a altura da imagem ao tamanho máximo do contêiner */
+    object-fit: contain; /* Ajusta a imagem para se ajustar ao tamanho do contêiner */
     border-radius: 8px;
 }
-
+.link {
+    text-decoration: underline;
+   
+}
+.link:hover {
+     font-weight: bolder;
+    color: #090a0b;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .profile-info {
@@ -233,4 +268,62 @@ body {
     .tweet-image {
         max-height: 300px; /* Ajusta o tamanho da imagem para telas menores */
     }
+}
+/* Estilos para o modal */
+/* Estilos para o modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1000; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Backdrop escurecido */
+    overflow: auto; /* Adiciona rolagem se necessário */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 900px; /* Limita a largura máxima */
+    position: absolute; /* Posiciona o modal no centro da tela */
+    top: 50%; /* Move o modal para o meio da tela */
+    left: 50%; /* Move o modal para o meio da tela */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar completamente */
+    padding: 20px; /* Adiciona algum preenchimento */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+/* Imagem dentro do modal */
+#modalImage {
+    width: 100%; /* Ajusta a largura da imagem para preencher o modal */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da altura */
+    max-height: 80vh; /* Limita a altura máxima */
+    object-fit: contain; /* Ajusta a imagem para se ajustar ao tamanho do modal */
+    border-radius: 10%;
+    
+}
+
+/* Botão de fechamento */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Botão de fechamento no hover */
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
