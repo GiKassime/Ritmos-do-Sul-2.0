@@ -1,0 +1,59 @@
+/* Estilo específico para o diálogo de música */
+.dialog-musica {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 90vw; /* Ajusta a largura máxima do diálogo */
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+   
+}
+
+
+/* Estilo específico para o player de música */
+.player {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.player-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.player-content .player-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.player-content .song-info h3, 
+.player-content .song-info p {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Estilo específico para o ícone de fechar */
+.player .close {
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    margin-right: -10px;
+    margin-top: -10px;
+    transition: color 0.3s;
+}
+
+.player .close:hover {
+    color: #888783;
+}
