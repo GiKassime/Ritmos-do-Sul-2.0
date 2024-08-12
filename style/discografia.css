@@ -20,7 +20,6 @@ body {
     align-items:center;
     justify-content: space-around; /* Distribui o espaço entre os itens */
     background: transparent; /* Fundo transparente */
-    
 }
 
 /* Ícones sociais */
@@ -28,7 +27,6 @@ body {
     list-style: none;
     display: flex;
     gap: 3vw;
-  
 }
 
 .social-items a {
@@ -50,7 +48,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    font-family: "Bebas Neue", sans-serif ;
+    font-family: "Bebas Neue", sans-serif;
     color: white;
     font-size: calc(25px + 0.5vw);
     transition: color 0.3s;
@@ -59,7 +57,6 @@ body {
 .nav-links a:hover {
     color: #888783;
 }
-
 
 /* Estilo para o contêiner de cards */
 .card-container {
@@ -75,7 +72,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: 30vw; /* Largura do card */
+    width: 20vw; /* Largura do card */
     height: 40vh; /* Altura do card, igual à largura para manter o formato quadrado */
     position: relative; /* Necessário para o efeito de sobreposição da descrição */
     overflow: hidden; /* Garante que a imagem e o conteúdo não vazem o card */
@@ -152,4 +149,121 @@ body {
 .card-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0,0,0,0.5); /* Sombra de foco */
+}
+
+/* Estilo específico para o diálogo de música */
+.dialog-musica {
+    border: 30px black;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 40vw; /* Ajusta a largura máxima do diálogo */
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Estilo específico para o player de música */
+.player {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.player-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.player-content .player-img {
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.player-content .song-info h3, 
+.player-content .song-info p {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Estilo específico para o ícone de fechar */
+.player .close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f9f9f9;
+  margin-left: auto;
+    transition: color 0.3s;
+}
+
+.player .close:hover {
+    color: #888783;
+}
+
+.custom-audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.play-pause-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.play-icon, .pause-icon {
+    display: none;
+}
+
+.play-pause-btn.playing .play-icon {
+    display: none;
+}
+
+.play-pause-btn.playing .pause-icon {
+    display: inline-block;
+}
+
+.play-pause-btn:not(.playing) .play-icon {
+    display: inline-block;
+}
+
+.progress-container {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    height: 4px;
+}
+
+.current-time, .duration {
+    color: rgb(226, 226, 226);
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+}
+
+.volume-bar {
+    width: 80px;
+    border-radius: 5px;
+    height: 4px;
+    margin-left: 10px;
 }
