@@ -1,18 +1,108 @@
 const albuns = [
     {
-        nome: "Caminhos da vida",
+        nome: "Nos caminhos da vida",
         texto: "Cada faixa é uma jornada emocional, perfeita para quem valoriza a simplicidade e a profundidade dos sentimentos.",
-        imagem: "album1.jpg", musica: "caminhosdavida.mp3"
+        imagem: "album1.jpg",
+        musica: "caminhosdavida.mp3",
+        letra: `Nos caminhos da vida eu te encontrei<br>
+E o destino nos uniu sem avisar<br>
+Foi um brilho no olhar que me encantou<br>
+E agora eu<br><br>
+
+Te levo no coração sem ter razão<br>
+A noite chega e eu só penso em nós<br>
+A saudade aperta forte no peito<br>
+E eu só quero ouvir sua voz<br><br>
+
+Vem pra cá meu bem quero te amar<br>
+Nosso amor é chama que não vai apagar<br>
+Na balada ou no sertão quero te ter<br>
+Nosso amor é infinito pode crer<br><br>
+
+Nas modas sertanejas dançamos juntos<br>
+A lua cheia ilumina nosso amor<br>
+É um sentimento puro e profundo<br>
+Que me faz querer você por onde for<br><br>
+
+Vem pra cá meu bem quero te amar<br>
+Nosso amor é chama que não vai apagar<br>
+Na balada ou no sertão quero te ter<br>
+Nosso amor é infinito pode crer<br><br>
+
+Nossa vida é um poema em canção<br>
+Cada verso é mais um dia de paixão<br>
+Não vejo a hora de te ver sorrir<br>
+Seu sorriso é o que me faz feliz`
     },
     {
         nome: "Noite de fiesta",
-        texto: "Com ritmos contagiantes e letras divertidas, cada faixa é um convite para dançar, brindar e viver momentos inesquecíveis. Perfeito para quem adora se divertir e aproveitar a vida ao máximo.",
-        imagem: "album2.jpg", musica: "noitedefiesta.mp3"
+        texto: "Com ritmos contagiantes e letras divertidas, cada faixa é um convite para dançar, brindar e viver momentos inesquecíveis.",
+        imagem: "album2.jpg",
+        musica: "noitedefiesta.mp3",
+        letra: `Ela chega na balada<br>
+Copos cheios na mão<br>
+Todo mundo animado<br>
+Coração em explosão<br><br>
+
+Ele dança no salão<br>
+Pisca de longe pra ela<br>
+O ritmo contagiante<br>
+Noite vai ser daquelas<br><br>
+
+Vamos beber até cair<br>
+Na pista vamos sorrir<br>
+Baila comigo mamá<br>
+Hasta la fiesta acabar<br><br>
+
+Os amigos tão chegando<br>
+Mais tequila pra brindar<br>
+A galera toda junta<br>
+Noite para celebrar<br><br>
+
+Ela sorri pra ele<br>
+Num abraço aconchegante<br>
+Dois corações latinam<br>
+Nessa dança eletrizante<br><br>
+
+Vamos beber até cair<br>
+Na pista vamos sorrir<br>
+Baila comigo mamá<br>
+Hasta la fiesta acabar`
     },
     {
         nome: "Perdí mi Corazón",
-        texto: "Com letras emocionantes e melodias tocantes, cada faixa mergulha no coração partido e na superação. Ideal para quem busca uma catarse emocional e se identifica com histórias de amor e perda.",
-        imagem: "album3.jpg", musica: "perdimicorazon.mp3"
+        texto: "Com letras emocionantes e melodias tocantes, cada faixa mergulha no coração partido e na superação.",
+        imagem: "album3.jpg",
+        musica: "perdimicorazon.mp3",
+        letra: `Noite fria sozinha estou<br>
+O teu calor não me abraçou<br>
+Memórias que não vão embora<br>
+Saudades do teu amor<br><br>
+
+Juraste amor mas foi mentira<br>
+Te vi com outra alma vazia<br>
+Chorei ao ver tua traição<br>
+Rasgaste o meu coração<br><br>
+
+Perdí mi corazón<br>
+En la sombra de tu traición<br>
+Chorei tanto por favor<br>
+Devolve-me meu amor<br><br>
+
+As estrelas não brilham mais<br>
+Desde que tu disseste adeus<br>
+Dói demais pensar em nós dois<br>
+Sem ti fico sem paz<br><br>
+
+No coração só há dor<br>
+Teu aroma ainda está na flor<br>
+Promessas no vento se vão<br>
+Levaste meu último florão<br><br>
+
+Perdí mi corazón<br>
+En la sombra de tu traición<br>
+Chorei tanto por favor<br>
+Devolve-me meu amor`
     }
 ];
 
@@ -30,11 +120,9 @@ function carregarAlbuns() {
     const albumSection = document.querySelector('.card-container');
 
     albuns.forEach((album, index) => {
-        // Cria um novo div para o album com a classe card
         const albumClone = document.createElement('div');
         albumClone.classList.add('card');
     
-        // Adiciona o conteúdo do álbum
         albumClone.innerHTML = `
             <img src="${caminho_img + album.imagem}" class="card-image">
             <div class="card-content">
@@ -69,43 +157,43 @@ function carregarAlbuns() {
                     Your browser does not support the audio element.
                 </audio>
             </div>
+            <div class="lyrics-container">
+                <h4>Letra da Música:</h4>
+                <p>${album.letra}</p>
+            </div>
             </dialog>
         `;
     
-        // Adiciona o álbum à seção de álbuns
         albumSection.appendChild(albumClone);
     
-        // Adiciona eventos de clique para abrir e fechar o diálogo
         const button = document.getElementById(`card-button${index}`);
         const dialog = document.getElementById(`music-dialog${index}`);
         const closeButton = dialog.querySelector(".close");
         const audio = dialog.querySelector(".audio-element");
     
-        // Abrir o diálogo quando o botão "Ouça Agora" for clicado
         button.addEventListener("click", function (e) {
             e.preventDefault();
             dialog.showModal();
         });
     
-        // Fechar o diálogo e pausar a música quando o ícone "×" for clicado
         closeButton.addEventListener("click", function () {
             dialog.close();
             audio.pause();
-            audio.currentTime = 0; // Reinicia a música
+            audio.currentTime = 0;
         });
+
         dialog.addEventListener("click", (event) => {
             if (event.target === dialog) {
-              dialog.close();
-              audio.pause();
+                dialog.close();
+                audio.pause();
             }
-          });
-        // Fechar o diálogo e pausar a música quando o diálogo for fechado
-        dialog.addEventListener("close", function () {
-            audio.pause();
-            audio.currentTime = 0; // Reinicia a música
         });
     
-        // Configura o player de música personalizado
+        dialog.addEventListener("close", function () {
+            audio.pause();
+            audio.currentTime = 0;
+        });
+    
         setupPlayer(dialog);
     });
 }

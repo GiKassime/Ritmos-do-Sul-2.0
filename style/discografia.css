@@ -156,10 +156,37 @@ body {
     border: 30px black;
     border-radius: 10px;
     overflow: hidden;
+    max-height: 80vh;
     max-width: 40vw; /* Ajusta a largura máxima do diálogo */
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
+.lyrics-container {
+    max-height: 23vh; /* Define uma altura máxima para o contêiner */
+    overflow-y: auto; /* Ativa a barra de rolagem vertical */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(98, 98, 98, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* Estilos para a barra de rolagem */
+.lyrics-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lyrics-container::-webkit-scrollbar-thumb {
+    background-color: #fff; /* Cor branca para a barra de rolagem */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75); /* Efeito de neon */
+}
+
+.lyrics-container::-webkit-scrollbar-track {
+    background-color: #2a2929; /* Cor de fundo da área de rolagem */
+}
+
 
 /* Estilo específico para o player de música */
 .player {

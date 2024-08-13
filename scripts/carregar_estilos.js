@@ -1,6 +1,6 @@
 
 const estilos = [
-    "header.css","footer.css","contato.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    "header.css","footer.css","contato.css"
 ]
    const head = document.querySelector('head');
    const body = document.querySelector('body');
