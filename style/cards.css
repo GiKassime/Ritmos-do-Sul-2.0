@@ -45,12 +45,13 @@ object-fit: cover;
 }
 
 .card-back {
+color:#bdbdbd;
 transform: rotateY(180deg);
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: linear-gradient(135deg, rgba(255, 232, 26, 0.77), rgba(255, 220, 143, 0.8)); /* Gradiente */
+background: linear-gradient(135deg, rgba(44, 5, 120, 0.2), rgba(32, 25, 10, 0.8)); /* Gradiente */
 backdrop-filter: blur(10px); /* Efeito de desfoque */
 }
 
