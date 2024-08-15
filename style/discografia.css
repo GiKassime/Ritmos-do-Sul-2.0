@@ -123,33 +123,7 @@ body {
 }
 
 /* Estilo para o botão */
-.card-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent; /* Fundo transparente */
-    color: #fff; /* Cor do texto */
-    border: 2px solid #fff; /* Borda fina e colorida */
-    border-radius: 25px; /* Bordas arredondadas */
-    text-decoration: none;
-    font-size: 1em; /* Tamanho da fonte do botão */
-    font-weight: bold;
-    text-transform: uppercase; /* Texto em maiúsculas */
-    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-    box-shadow: none; /* Sem sombra externa */
-}
 
-/* Efeito ao passar o mouse sobre o botão */
-.card-button:hover {
-    background-color: #000; /* Cor de fundo no hover */
-    color: #fff; /* Cor do texto no hover */
-    transform: scale(1.05); /* Efeito de zoom */
-}
-
-/* Adicionando uma sombra interna ao botão no foco */
-.card-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.5); /* Sombra de foco */
-}
 
 /* Estilo específico para o diálogo de música */
 .dialog-musica {

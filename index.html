@@ -6,6 +6,41 @@
     <title>Ritmos do sul</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="/img/logo.png" type="image/png">
+    <style>
+        /* Estilo básico para o preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease;
+        }
+    </style>
 
 </head>
 <body>
@@ -31,7 +66,9 @@
     </header>
     
     <main>
-       
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
         <section>
           
             <div class="carousel">
@@ -77,7 +114,7 @@
                     <div class="card-back">
                         <h2>Pedro Silva</h2>
                         <p>Descrição sobre o integrante.</p>
-                        <a class="btn" onclick="SelecionarPerfil(2)">Saiba Mais</a>
+                        <a class="card-button" onclick="SelecionarPerfil(2)">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="card card2">
@@ -87,7 +124,7 @@
                     <div class="card-back">
                         <h2>Elena Reyes</h2>
                         <p>Descrição sobre a integrante.</p>
-                        <a class="btn" onclick="SelecionarPerfil(0)">Saiba Mais</a>
+                        <a class="card-button" onclick="SelecionarPerfil(0)">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="card card3">
@@ -97,7 +134,7 @@
                     <div class="card-back">
                         <h2>Mateo Rivera</h2>
                         <p>Descrição sobre o integrante.</p>
-                        <a class="btn" onclick="SelecionarPerfil(1)">Saiba Mais</a>
+                        <a class="card-button" onclick="SelecionarPerfil(1)">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="card card4">
@@ -107,7 +144,7 @@
                     <div class="card-back">
                         <h2>Valentina López</h2>
                         <p>Descrição sobre a integrante.</p>
-                        <a class="btn" onclick="SelecionarPerfil(3)">Saiba Mais</a>
+                        <a class="card-button" onclick="SelecionarPerfil(3)">Saiba Mais</a>
                     </div>
                 </div>
             </div>
@@ -205,7 +242,6 @@
             </div>
         </div>
     </footer>
-   
     <script src="./scripts/carregar_estilos.js"></script>
     <script src="./scripts/banner.js"></script>
     <script src="./scripts/nav.js"></script>

@@ -39,3 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+        // esconder o preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                preloader.classList.add('hidden');
+            }, 100);
+        });
+
