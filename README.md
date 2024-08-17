@@ -6,20 +6,12 @@ Bem-vindo ao repositório do **Ritmos do Sul**! Este projeto tem como objetivo d
 
 Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
 
-<div align="center">
-    <div style="display: inline-block; text-align: center; margin: 10px;">
-        <a href="https://github.com/GiKassime" target="_blank">
-            <img src="https://github.com/GiKassime.png?size=100" alt="Giovana Kassime" style="border-radius: 50%; width: 100px; height: 100px;">
-        </a>
-        <p><a href="https://github.com/GiKassime" target="_blank">Giovana Kassime</a></p>
-    </div>
-    <div style="display: inline-block; text-align: center; margin: 10px;">
-        <a href="https://github.com/anastoledo" target="_blank">
-            <img src="https://github.com/anastoledo.png?size=100" alt="Ana Júlia" width="100" height="100" style="border-radius: 50%;" alt="Ana Júlia" style="border-radius: 50%"; width: 100px; height: 100px;">
-        </a>
-        <p><a href="https://github.com/anastoledo" target="_blank">Ana Júlia</a></p>
-    </div>
-</div>
+## Colaboradores
+
+
+| [![Avatar de Ana](https://github.com/joaosilva.png?size=100)](https://github.com/joaosilva) | [![Avatar de Maria](https://github.com/mariasantos.png?size=100)](https://github.com/mariasantos) | [![Avatar de Pedro](https://github.com/pedrosouza.png?size=100)](https://github.com/pedrosouza) |
+|:---:|:---:|:---:|
+| [**João Silva**](https://github.com/joaosilva) | [**Maria Santos**](https://github.com/mariasantos) | [**Pedro Souza**](https://github.com/pedrosouza) |
 
 ## Interface do Projeto
 
