@@ -6,21 +6,20 @@ Bem-vindo ao repositório do **Ritmos do Sul**! Este projeto tem como objetivo d
 
 Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
 
-<div align="center" display="flex">
-    <div style="float: left; text-align: center; margin: 10px;">
+<div align="center">
+    <div style="display: inline-block; text-align: center; margin: 10px;">
         <a href="https://github.com/GiKassime" target="_blank">
-            <img src="https://github.com/GiKassime.png?size=100" alt="João Silva" style="border-radius: 100px; width: 100px; height: 100px;">
+            <img src="https://github.com/GiKassime.png?size=100" alt="Giovana Kassime" style="border-radius: 50%; width: 100px; height: 100px;">
         </a>
         <p><a href="https://github.com/GiKassime" target="_blank">Giovana Kassime</a></p>
     </div>
-    <div style="display: inline; text-align: center; margin: 10px;">
+    <div style="display: inline-block; text-align: center; margin: 10px;">
         <a href="https://github.com/anastoledo" target="_blank">
-            <img src="https://github.com/anastoledo.png?size=100&border-radius=100" alt="Maria Santos" style="border-radius: 50%; width: 100px; height: 100px;">
+            <img src="https://github.com/anastoledo.png?size=100" alt="Ana Júlia" style="border-radius: 50%; width: 100px; height: 100px;">
         </a>
         <p><a href="https://github.com/anastoledo" target="_blank">Ana Júlia</a></p>
     </div>
-</div>
-
+</div>.
 ## Interface do Projeto
 
 ### Página Principal
