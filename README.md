@@ -9,9 +9,9 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
 ## Colaboradores
 
 
-| [![Avatar de Ana](https://github.com/joaosilva.png?size=100)](https://github.com/joaosilva) | [![Avatar de Maria](https://github.com/mariasantos.png?size=100)](https://github.com/mariasantos) | [![Avatar de Pedro](https://github.com/pedrosouza.png?size=100)](https://github.com/pedrosouza) |
-|:---:|:---:|:---:|
-| [**João Silva**](https://github.com/joaosilva) | [**Maria Santos**](https://github.com/mariasantos) | [**Pedro Souza**](https://github.com/pedrosouza) |
+| [![Avatar de Ana](https://github.com/GiKassime.png?size=100)](https://github.com/GiKassime) | [![Avatar de Maria](https://github.com/anastoledo.png?size=100)](https://github.com/anastoledo) |
+|:---:|:---:|
+| [**Giovana Kassime**](https://github.com/GiKassime) | [**Ana Júlia**](https://github.com/anastoledo) | 
 
 ## Interface do Projeto
 
