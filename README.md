@@ -9,7 +9,7 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
     <div style="text-align: center; margin: 10px;">
         <a href="https://github.com/GiKassime" target="_blank">
-            <img src="https://github.com/GiKassime.png?size=100" alt="João Silva" style="border-radius: 50%; width: 100px; height: 100px;">
+            <img src="https://github.com/GiKassime.png?size=100" alt="João Silva" style="border-radius: 100%; width: 100px; height: 100px;">
         </a>
         <p><a href="https://github.com/GiKassime" target="_blank">João Silva</a></p>
     </div>
