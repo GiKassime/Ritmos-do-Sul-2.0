@@ -27,7 +27,8 @@ avisoDialog.addEventListener("click", (event) => {
  document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Impede o envio do formulário
   var integrante = document.getElementById("integrante-escolhido").value;
-  var mensagem = "Formulário enviado com sucesso para <span>" + integrante + "</span>!";
+  var nome = document.getElementById("nome").value;
+  var mensagem = "Formulário enviado de "+nome+" com sucesso para <span>" + integrante + "</span>!";
   document.getElementById("aviso").innerHTML = mensagem;
   dialog.close(); // Fecha a dialog de contato
   document.getElementById("avisoDialog").showModal(); // Abre a dialog de aviso
