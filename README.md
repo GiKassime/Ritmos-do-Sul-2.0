@@ -1,6 +1,12 @@
 # Ritmos do Sul
 
 Bem-vindo ao repositório do **Ritmos do Sul**! Este projeto tem como objetivo desenvolver um site para uma banda sertaneja fictícia.
+Trabalho feito por
+## Colaboradores
+
+| [![Avatar de Colaborador1](https://github.com/GiKassime.png?size=100)](https://github.com/GiKassime) | [![Avatar de Colaborador2](https://github.com/Gi.png?size=100)](https://github.com/username2) | 
+|:---:|:---:|:---:|
+| [**Colaborador1**](https://github.com/username1) | [**Colaborador2**](https://github.com/username2) | 
 
 ## Interface do Projeto
 
