@@ -19,7 +19,7 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
         </a>
         <p><a href="https://github.com/anastoledo" target="_blank">Maria Santos</a></p>
     </div>
-</div>.
+</div>
 ## Interface do Projeto
 
 ### Página Principal
