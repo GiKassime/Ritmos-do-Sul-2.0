@@ -6,41 +6,39 @@
     <title>Perfil do Twitter</title>
     <link rel="stylesheet" href="./style/twitter.css">
     <link rel="icon" href="/img/twitter/twitter_logo.png" type="image/x-icon">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
-<body>   <!-- Botão de Voltar -->
-        <a href="index.html" class="back-button"> <i class="fa-solid fa-arrow-left white icon"></i></a>
-    <div class="profile-container">
-     
+<body>
+    <!-- Botão de Voltar -->
+    <a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left white icon"></i></a>
 
+    <div class="profile-container">
         <!-- Cabeçalho com Banner e Foto de Perfil -->
         <header class="profile-header">
             <div class="profile-banner">
-                <img src="" id="banner-imagem"alt="Banner" class="banner-image">
+                <img src="" id="banner-imagem" alt="Banner" class="banner-image">
             </div>
             <div class="profile-info">
                 <div class="profile-picture">
                     <img src="" id="img-perfil" alt="Imagem Perfil">
-                </div>  
+                </div>
                 <div class="profile-details">
                     <h1 class="profile-name" id="nome-usuario">Nome de Usuário</h1>
-                    <p class="profile-username"  id="username" >@username</p>
+                    <p class="profile-username" id="username">@username</p>
                     <p class="profile-bio" id="bio">Aqui vai uma breve biografia do usuário. Pode incluir informações sobre interesses, profissão, etc.</p>
                     <div class="profile-stats">
-                        <span ><strong id="tweets">1.234</strong> Tweets</span>
-                        <span ><strong id="seguidores">567</strong> Seguidores</span>
+                        <span><strong id="tweets">1.234</strong> Tweets</span>
+                        <span><strong id="seguidores">567</strong> Seguidores</span>
                         <span><strong id="seguindo">890</strong> Seguindo</span>
                     </div>
                 </div>
             </div>
         </header>
-        
+
         <!-- Conteúdo Principal com Tweets -->
         <main class="profile-main">
             <section class="tweets">
-                <h2 >Tweets</h2>
+                <h2>Tweets</h2>
                 <div class="tweet">
                     <div class="tweet-header">
                         <div class="tweet-profile-picture">
@@ -59,15 +57,16 @@
                 </div>
             </section>
         </main>
-        <!-- Modal para imagem -->
-    <div id="imageModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modalImage" src="" alt="Imagem em tamanho maior">
-    </div>
-</div>
 
+        <!-- Modal para imagem -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Imagem em tamanho maior">
+            </div>
+        </div>
     </div>
-    <script src="./scripts/twitter.js" ></script>
+
+    <script src="./scripts/twitter.js"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="/img/logo.png" type="image/png">
-
     <title>Álbuns</title>
     <style>
         /* Estilo básico para o preloader */
@@ -48,73 +47,70 @@
     <header id="header">
         <div class="container">
             <div class="flex">
-                <a href="index.html"><img class="icone" src="/img/logo.png" alt=""></a>
+                <a href="index.html"><img class="icone" src="/img/logo.png" alt="Logo"></a>
                 <nav>
                     <ul>
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="index.html#integrantes">Integrantes</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#integrantes">Integrantes</a></li>
                         <li><a href="index.html#sobre">Sobre</a></li>
                         <li><a href="index.html#agenda">Agenda</a></li>
                         <li><a href="discografia.html">Álbuns</a></li>
                     </ul>
-                
-    
                 </nav>
                 <button id="openDialogBtn">Contato</button>
-    
             </div>
         </div>
     </header>
-    
+
     <div id="preloader">
         <div class="loader"></div>
     </div>
+
     <!-- Contêiner de Cards -->
     <div class="card-container">
+        <!-- Cards serão adicionados aqui -->
+    </div>
 
+    <dialog id="contactDialog">
+        <div>
+            <span class="close">&times;</span>
+            <h2 class="titulo">FALE <span>CONOSCO</span></h2>
+            <form id="contactForm" action="">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
+                <div>
+                    <select name="integrante-escolhido" id="integrante-escolhido">
+                        <option value="Ritmos do Sul">Selecione o integrante</option>
+                        <option value="Pedro Silva">Pedro Silva</option>
+                        <option value="Elena Reyes">Elena Reyes</option>
+                        <option value="Mateo Rivera">Mateo Rivera</option>
+                        <option value="Valentina López">Valentina López</option>
+                    </select>
+                </div>
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
+                <div class="btn-enviar">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
         </div>
+    </dialog>
 
-        
-        <!-- Adicione mais cards conforme necessário -->
-        <dialog id="contactDialog" >
-            <div>
-                <span class="close">&times;</span>
-                <h2 class="titulo">FALE <span>CONOSCO</span></h2>
-                <form id="contactForm" action="">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
-                    <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
-                    <div>
-                        <select name="integrante-escolhido" id="integrante-escolhido">
-                            <option value="Ritmos do Sul">Selecione o integrante</option>
-                            <option value="Pedro Silva">Pedro Silva</option>
-                            <option value="Elena Reyes">Elena Reyes</option>
-                            <option value="Mateo Rivera">Mateo Rivera</option>
-                            <option value="Valentina López">Valentina López</option>
-                        </select>
-                    </div>
-                    <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </form>
-            </div>
-        </dialog>
     <dialog id="avisoDialog" class="aviso">
         <span class="close" id="fecharAvisoDialog">&times;</span>
         <h2 id="aviso"></h2>
     </dialog>
-    </div>
+
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="col1">
                     <a href="#" class="brand">Ritmos do Sul</a>
                     <ul class="media-icons">
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-spotify"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
                     </ul>
                 </div>
                 <div class="col2">
@@ -133,25 +129,22 @@
                 </div>
                 <div class="col3">
                     <h4>Considerações</h4>
-                    <p>Este website é dedicado à promoção da banda "Ritmos do Sul". Todo o conteúdo, incluindo imagens e textos, é de propriedade dos criadores do site e da banda, e não deve ser reproduzido sem permissão. Agradecemos a todos os fãs pelo apoio contínuo e esperamos que aproveitem nosso trabalho. Para dúvidas, sugestões ou reclamações, por favor, entre em contato conosco através das opções de contato fornecidas no site.
-                </p>
+                    <p>Este website é dedicado à promoção da banda "Ritmos do Sul". Todo o conteúdo, incluindo imagens e textos, é de propriedade dos criadores do site e da banda, e não deve ser reproduzido sem permissão. Agradecemos a todos os fãs pelo apoio contínuo e esperamos que aproveitem nosso trabalho. Para dúvidas, sugestões ou reclamações, por favor, entre em contato conosco através das opções de contato fornecidas no site.</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <p>
-                        - All Rigts Reserved
-                    </p>
+                    <p>- All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="./scripts/albuns.js" ></script>
-    <script src="./scripts/carregar_estilos.js" ></script>
-<script src="./scripts/contato.js"></script>
-<script src="./scripts/banner.js"></script>
-<script src="./scripts/nav.js"></script>
-<script src="./scripts/contato.js"></script>
-<script src="./scripts/reveal.js"></script>
+
+    <script src="./scripts/albuns.js"></script>
+    <script src="./scripts/carregar_estilos.js"></script>
+    <script src="./scripts/contato.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/reveal.js"></script>
 </body>
 </html>
