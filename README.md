@@ -15,7 +15,7 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
     </div>
     <div style="display: inline-block; text-align: center; margin: 10px;">
         <a href="https://github.com/anastoledo" target="_blank">
-            <img src="https://github.com/anastoledo.png?size=100" alt="Ana Júlia" style="border-radius: 50%; width: 100px; height: 100px;">
+            <img src="https://github.com/anastoledo.png?size=100" alt="Ana Júlia" width="100" height="100" style="border-radius: 50%;"alt="Ana Júlia" style="border-radius: 50%; width: 100px; height: 100px;">
         </a>
         <p><a href="https://github.com/anastoledo" target="_blank">Ana Júlia</a></p>
     </div>
