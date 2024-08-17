@@ -4,9 +4,13 @@ Bem-vindo ao repositório do **Ritmos do Sul**! Este projeto tem como objetivo d
 
 ## Interface do Projeto
 
-Veja abaixo uma captura de tela da interface principal:
+Página principal:
 
 ![Interface do Projeto](assets/projeto.png)
+
+Seção Sobre:
+
+![Interface do Projeto](assets/sobre.png)
 
 ## Funcionalidades
 
