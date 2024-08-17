@@ -8,9 +8,18 @@ Página principal:
 
 ![Interface do Projeto](assets/projeto.png)
 
+Seção Integrantes:
+
+![Interface do Projeto](assets/integrantes.png)
 Seção Sobre:
 
-![Interface do Projeto](assets/sobre.png)
+![Interface do Projeto](assets/agenda.png)
+Discografia:
+
+![Interface do Projeto](assets/discografia.png)
+Twitter:
+
+![Interface do Projeto](assets/twitter.png)
 
 ## Funcionalidades
 
