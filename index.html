@@ -41,19 +41,20 @@
             transition: opacity 0.5s ease;
         }
     </style>
+
 </head>
-<body>
+<body> 
     <div id="preloader">
         <div class="loader"></div>
-    </div>
+     </div>
     <header id="header">
         <div class="container">
             <div class="flex">
                 <a href="index.html"><img class="icone" src="/img/logo.png" alt=""></a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#integrantes">Integrantes</a></li>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="#integrantes">Integrantes</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#agenda">Agenda</a></li>
                         <li><a href="discografia.html">Álbuns</a></li>
@@ -63,28 +64,28 @@
             </div>
         </div>
     </header>
-
+    
     <main>
         <section>
             <div class="carousel">
                 <div class="carousel-inner">
                     <h1 class="carousel-heading efeito-txt-topo">Ritmos do <span>Sul</span></h1> 
-                    <div class="carousel-item">
-                        <img style="object-position: top;" src="img/imagem_carousel1.png" alt="Imagem 1">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <img style="object-position: center;" src="img/imagem_carousel.png" alt="Imagem 2">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/imagem_carousel2.png" alt="Imagem 2">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="carousel-item">
+                            <img style="object-position: top;" src="img/imagem_carousel1.png" alt="Imagem 1">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="object-position: center;" src="img/imagem_carousel.png" alt="Imagem 2">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/imagem_carousel2.png" alt="Imagem 2">
+                            <div class="overlay"></div>
+                        </div>
                 </div>
             </div>
         </section>
-        <section id="sobre" class="band-history">
+        <section id="sobre"class="band-history ">
             <div class="history-container">
                 <div class="history-image">
                     <img src="/img/banda_historia.png" alt="Imagem da Banda">
@@ -95,8 +96,8 @@
                     <p>A banda "Ritmos do Sul" começou quando Pedro Silva, um músico independente, conheceu Elena Reyes em São Paulo. Elena, estudando música folclórica chilena, se juntou a Lucas para misturar sertanejo com elementos chilenos. Eles foram depois acompanhados por Mateo Rivera, um trompetista colombiano, e Valentina López, que trouxe o violino paraguaio ao grupo. Após enfrentar desafios em apresentações em pequenos clubes, o grupo ganhou destaque quando uma produtora local investiu neles, permitindo que se apresentassem em festivais regionais. Com dedicação e uma proposta musical única, a banda construiu uma base sólida de fãs e ganhou notoriedade.</p>    
                 </div>
             </div>
-        </section>
-
+        </section> 
+    
         <section id="integrantes" class="cards">
             <h2 class="section-title">Integrantes</h2>
             <div class="card-container">
@@ -143,51 +144,55 @@
             </div>
         </section>
         <section id="agenda" class="agenda">
-            <div class="slide">
-                <h2 class="ano">2024</h2>
-                <div class="lista-do-card">
-                    <div class="card-item">
-                        <div class="borda-agenda">
-                            <h2 class="dia"></h2>
-                            <p class="mes"></p>
+            
+                <div class="slide"><h2 class="ano">2024</h2>
+                    <div class="lista-do-card">
+                        <div class="card-item">
+                            <div class="borda-agenda">
+                                <h2 class="dia"></h2>
+                             <p class="mes"></p></div>
+                             
+                             <h2 class="cidade"></h2>
+                             <div class="setas">
+                                <i class="fa-solid fa-arrow-left white icon" onclick="voltar()"></i>
+                                <i class="fa-solid fa-arrow-right white icon" onclick="avancar()"></i>
+                             </div>
+                            
+                            <button class="botao" onclick="abrirAviso()">Detalhes</button>
+                             
                         </div>
-                        <h2 class="cidade"></h2>
-                        <div class="setas">
-                            <i class="fa-solid fa-arrow-left white icon" onclick="voltar()"></i>
-                            <i class="fa-solid fa-arrow-right white icon" onclick="avancar()"></i>
-                        </div>
-                        <button class="botao" onclick="abrirAviso()">Detalhes</button>
                     </div>
-                </div>
+            
             </div>
         </section>
-        <dialog id="contactDialog">
-            <div>
-                <span class="close">&times;</span>
-                <h2 class="titulo">FALE <span>CONOSCO</span></h2>
-                <form id="contactForm" action="">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
-                    <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
-                    <div>
-                        <select name="integrante-escolhido" id="integrante-escolhido">
-                            <option value="Ritmos do Sul">Selecione o integrante</option>
-                            <option value="Pedro Silva">Pedro Silva</option>
-                            <option value="Elena Reyes">Elena Reyes</option>
-                            <option value="Mateo Rivera">Mateo Rivera</option>
-                            <option value="Valentina López">Valentina López</option>
-                        </select>
-                    </div>
-                    <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </form>
-            </div>
-        </dialog>
-        <dialog id="avisoDialog" class="aviso">
-            <span class="close" id="fecharAvisoDialog">&times;</span>
-            <h2 id="aviso"></h2>
-        </dialog>
+            <dialog id="contactDialog" >
+                <div>
+                    <span class="close">&times;</span>
+                    <h2 class="titulo">FALE <span>CONOSCO</span></h2>
+                    <form id="contactForm" action="">
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                        <input type="email" name="email" id="email" placeholder="Informe seu e-mail:" required>
+                        <div>
+                            <select name="integrante-escolhido" id="integrante-escolhido">
+                                <option value="Ritmos do Sul">Selecione o integrante</option>
+                                <option value="Pedro Silva">Pedro Silva</option>
+                                <option value="Elena Reyes">Elena Reyes</option>
+                                <option value="Mateo Rivera">Mateo Rivera</option>
+                                <option value="Valentina López">Valentina López</option>
+                            </select>
+                        </div>
+                        <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem:" required></textarea>
+                        <div class="btn-enviar">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+            <dialog id="avisoDialog" class="aviso">
+                <span class="close" id="fecharAvisoDialog">&times;</span>
+                <h2 id="aviso"></h2>
+            </dialog>
+            
     </main>
     <footer class="footer">
         <div class="footer-top">
@@ -198,37 +203,45 @@
                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-spotify"></i></a></li>
                     </ul>
                 </div>
                 <div class="col2">
-                    <h4>CONTATO</h4>
-                    <p>Rua Souza Naves, 123</p>
-                    <p>Foz do Iguaçu, PR</p>
-                    <p>(45) 1234-5678</p>
-                    <p>email@ritmosdosul.com</p>
+                    <ul class="menu">
+                        <li><h4>Sobre</h4></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Agenda</a></li>
+                        <li><a href="#">Discografia</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><h4>Contatos</h4></li>
+                        <li><a href="#">Reclamações</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Sugestoes</a></li>
+                    </ul>
                 </div>
                 <div class="col3">
-                    <h4>MAPA DO SITE</h4>
-                    <ul class="link">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#integrantes">Integrantes</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#agenda">Agenda</a></li>
-                        <li><a href="discografia.html">Álbuns</a></li>
-                    </ul>
+                    <h4>Considerações</h4>
+                    <p>Este website é dedicado à promoção da banda "Ritmos do Sul". Todo o conteúdo, incluindo imagens e textos, é de propriedade dos criadores do site e da banda, e não deve ser reproduzido sem permissão. Agradecemos a todos os fãs pelo apoio contínuo e esperamos que aproveitem nosso trabalho. Para dúvidas, sugestões ou reclamações, por favor, entre em contato conosco através das opções de contato fornecidas no site.
+                </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>
+                        - All Rigts Reserved
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Todos os direitos reservados.</p>
-        </div>
     </footer>
-    <script>
-        // Preloader
-        window.addEventListener('load', function () {
-            document.getElementById('preloader').classList.add('hidden');
-        });
-    </script>
+    <script src="./scripts/carregar_estilos.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/contato.js"></script>
+    <script src="./scripts/agenda.js"></script>
+    <script src="./scripts/reveal.js" defer></script>
+    <script src="./scripts/twitter.js" ></script>
 </body>
 </html>
