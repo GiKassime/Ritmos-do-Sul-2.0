@@ -19,8 +19,7 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
         </a>
         <p><a href="https://github.com/anastoledo" target="_blank">Maria Santos</a></p>
     </div>
-</div>
-
+</div>.
 ## Interface do Projeto
 
 ### Página Principal
@@ -38,17 +37,9 @@ Agradecimentos especiais aos colaboradores que ajudaram a criar este projeto:
 ### Twitter
 ![Twitter](assets/twitter.png)
 
-## Funcionalidades
-
-- **Funcionalidade 1**: Descrição da funcionalidade.
-- **Funcionalidade 2**: Descrição da funcionalidade.
-- **Funcionalidade 3**: Descrição da funcionalidade.
 
 ## Como Executar
 
 1. Clone o repositório.
-2. Instale as dependências (se aplicável).
-3. Execute o projeto (adapte conforme a tecnologia utilizada).
-
-# Comando para instalar dependências, se necessário
+2. Execute o projeto com liver server ou uma extensão apropiada.
 
