@@ -6,7 +6,7 @@ Trabalho feito por
 
 | [![Avatar de Colaborador1](https://github.com/GiKassime.png?size=100)](https://github.com/GiKassime) | [![Avatar de Colaborador2](https://github.com/anastoledo.png?size=100)](https://github.com/anastoledo) | 
 |:---:|:---:|:---:|
-| [**Colaborador1**](https://github.com/username1) | [**Colaborador2**](https://github.com/username2) | 
+| [**Colaborador1**](https://github.com/GiKassime) | [**Colaborador2**](https://github.com/anastoledo) | 
 
 ## Interface do Projeto
 
